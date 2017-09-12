@@ -1,0 +1,252 @@
+$yellow: #F0C800
+$blue: #0088BB
+$gray: #4A4A4A
+$navbg: rgba(255,255,255, 0.8)
+
+$fontlightgray: #E4E4E4
+$fontmdgray: #797979
+$fontgray: #4A4A4A
+
+
+header
+	width: 100%
+	background-color: #e5e3e0
+	// height: 80px
+	.container-fluid
+		.row
+			height: 80px
+			position: relative
+			input[type=checkbox]
+				display: none
+			input[type=checkbox]:checked + ul.mtree
+				display: block
+			img[src*="img_nav_logo.png"]
+				display: none
+			.menu
+				ul.mtree
+					background-color: #fff
+					position: absolute
+					top: 100%
+					left: 0
+					width: 100%
+					display: none
+					padding: 0
+					li
+						// height: 80px
+
+						&:not(:last-of-type)
+							border-bottom: 1px solid #c9c9c9
+						a
+							line-height: 80px
+							height: 80px
+							text-align: center
+							display: block
+							text-decoration: none
+							color: #000
+.content
+	img[src*="bg_home_top.png"]
+		display: none
+	img[src*="img_home_begin.png"]
+		display: none
+	img
+		width: 100%
+		max-width: 100%
+	.row
+		.col
+			padding: 65px 15px
+			text-align: center
+			h1.title
+				font-size: 30px
+				font-weight: 600
+				margin-bottom: 30px
+			p
+				color: #7b7b7b
+				font-size: 26px
+				// text-align: left
+			.imghomebegin,.productintro,.benefit,.contact,.subscription
+				border-bottom: 1px solid #c9c9c9
+				padding: 60px 0
+			.productintro
+				.intro
+					margin-bottom: 30px
+					.introbox
+						background-color: $gray
+						border-radius: 5px
+						text-align: center
+						margin-bottom: 20px
+						padding: 25px 30px
+						.name
+							color: #fff
+							font-size: 30px
+						img
+							max-width: 106px
+							margin: 30px auto
+						.introcontent
+							color: #fff
+							text-align: left
+							font-size: 26px
+						.btn-goto
+							font-size: 26px
+							margin: 30px auto
+							width: 100%
+							background-color: $yellow
+							color: $fontgray
+			.benefit
+				.benefittitle
+					text-align: left
+					&:not(:last-of-type)
+						margin-bottom: 50px
+					&:before
+						content: ""
+						display: inline-block
+						background-image: url('../images/img_home_phone.png')
+						width: 30px
+						height: 30px
+						vertical-align: middle
+					&:nth-child(4)
+						&:before
+							background-image: url('../images/img_home_shop.png')
+					&:nth-child(5)
+						&:before
+							background-image: url('../images/img_home_date.png')
+					&:nth-child(6)
+						&:before
+							background-image: url('../images/img_home_store.png')
+					&:nth-child(7)
+						&:before
+							background-image: url('../images/img_home_cost.png')
+					.num
+						width: calc(100% - 35px)
+						display: inline-block
+						line-height: 30px
+						vertical-align: middle
+					span
+						float: right
+						color: #f0c800
+			.contact
+				.form-group
+					.btn
+						width: 100%
+			.subscription
+				input
+					margin: 30px 0
+				input::input-placeholder
+					text-align: center
+				input::-ms-input-placeholder
+					text-align: center
+				input::-webkit-input-placeholder
+					text-align: center
+				.btn-subscript
+					background-color: #4a4a4a
+					color: #fff
+					width: 100%
+footer
+	background-color: #4a4a4a
+	color: #fff
+	padding: 60px 0
+	img
+		margin: auto
+		display: block
+		
+	img[src*="img_bottom_logo.png"]
+		display: none
+	.logo
+		margin-bottom: 10px
+	.contactinfo
+		text-align: center
+		font-size: 26px
+		span
+			margin-bottom: 10px
+			display: block
+	.socialicon
+		text-align: center
+		margin-bottom: 60px
+		a
+			display: inline-block
+			&:nth-child(2)
+				margin: 0 10px
+	.col
+		span.title
+			font-weight: 600
+			font-size: 30px
+			margin-bottom: 20px
+			display: block
+			
+		ul
+			li
+				font-size: 26px
+	.copyright
+		text-align: center
+		font-size: 20px
+		span
+			display: block
+
+@media only screen and (min-width: 768px)
+	img[src*="rwd"]
+		display: none
+	img[src*="img_nav_logo.png"]
+		display: block
+	
+	
+	img[src*="img_bottom_logo.png"]
+		display: block
+		
+	header
+		width: 100%
+		background-color: #e5e3e0
+		// height: 80px
+		.container-fluid
+			.row
+				height: 85px
+				position: relative
+				max-width: 1290px
+				margin: auto
+				.menu
+					.menuicon
+						display: none
+					ul.mtree
+						display: none
+					.desktopmenu
+						ul
+							font-size: 0
+							margin-bottom: 0
+							li
+								display: inline-block
+								font-size: 18px
+								position: relative
+								
+								
+								&:not(:last-of-type)
+									margin-right: 30px
+								a
+									color: $fontgray
+									line-height: 85px
+									&:hover
+										color: $blue
+									&:hover+ul
+										display: block
+								ul
+									display: none
+									position: absolute
+									top: 100%
+									left: 0
+									background-color: #e5e3e0
+									li
+										margin: 0
+	.content
+		img[src*="bg_home_top.png"]
+			display: block
+		img[src*="img_home_begin.png"]
+			display: block
+		.container-fluid
+			.row
+				.col
+					max-width: 1020px
+					margin: auto
+					.productintro
+						.intro
+							
+
+
+
+
