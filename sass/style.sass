@@ -21,7 +21,7 @@ header
 				display: none
 			input[type=checkbox]:checked + ul.mtree
 				display: block
-			img[src*="img_nav_logo.png"]
+			img[src*="logo.png"]
 				display: none
 			.menu
 				ul.mtree
@@ -70,9 +70,9 @@ header
 				.desktopmenu
 					display: none
 .content
-	img[src*="bg_home_top.png"]
+	img[src*="top.png"]
 		display: none
-	img[src*="img_home_begin.png"]
+	img[src*="begin.png"]
 		display: none
 	img
 		width: 100%
@@ -90,7 +90,7 @@ header
 				-ms-transform: translate(-50%, -50%)
 				-o-transform: translate(-50%, -50%)
 				transform: translate(-50%, -50%)
-				background: url(../images/img_home_top_icon_rwd.png)
+				background: url(../images/img_home_top_icon_rwd.png) no-repeat
 				background-size: cover
 				width: 302px
 				height: 302px
@@ -98,19 +98,28 @@ header
 				+justify-content(center)
 				+align-items(center)
 				+flex-direction(column)
-				img[src*="img_home_o2o.png"]
+				img[src*="o2o.png"],img[src*="logo.png"]
 					display: none
-				img[src*="img_home_o2o_rwd"]
+				img[src*="o2o_rwd"],img[src*="logo_rwd.png"]
 					max-width: 166px
 					margin-bottom: 20px
 				span
 					text-align: center
 					color: #fff
 					font-weight: 600
-					font-size: 26px
-					
-				
+					font-size: 18px
+			.mobilelife
+				background: url(../images/mobilelife/img_mobilelife_top_icon_rwd.png) no-repeat
+			.mmrm
+				background: url(../images/mmrm/img_mmrm_top_icon_rwd.png) no-repeat
+				background-position: center center
+				background-size: contain
+			.iotstore
+				background: url(../images/iotstore/img_iotstore_top_icon_rwd.png) no-repeat
+				background-position: center center
+				background-size: contain
 
+				
 		.col
 			padding: 65px 15px
 			text-align: center
@@ -121,8 +130,9 @@ header
 			p
 				color: #7b7b7b
 				font-size: 26px
+				margin-bottom: 60px
 				// text-align: left
-			.imghomebegin,.productintro,.benefit,.contact,.subscription
+			.imghomebegin,.productintro,.benefit,.contact,.subscription,.mobile
 				border-bottom: 1px solid #c9c9c9
 				padding: 60px 0
 			.productintro
@@ -150,6 +160,31 @@ header
 							width: 100%
 							background-color: $yellow
 							color: $fontgray
+				.service
+					padding: 30px 0px
+					&:nth-child(3)
+						padding-top: 0
+					&:last-child
+						padding-bottom: 0
+					&:not(:last-of-type)
+						border-bottom: 1px solid #c9c9c9
+					.servicedescription
+						.title
+							font-size: 24px
+							font-weight: 600
+							span
+								display: block
+								font-weight: normal
+								
+						img[src*="old01.png"],img[src*="old02.png"],img[src*="old03.png"]
+							display: none
+						img[src*="new01.png"],img[src*="new02.png"],img[src*="new03.png"]
+							display: none
+					span.compare
+						display: block
+						color: $fontlightgray
+						font-size: 30px
+						margin: 30px 0
 			.benefit
 				.benefittitle
 					text-align: left
@@ -208,6 +243,31 @@ header
 					background-color: #4a4a4a
 					color: #fff
 					width: 100%
+			.mobile
+				.mobileservice
+					padding: 30px
+					text-align: left
+					background-color: $gray
+					color: #fff
+					border-radius: 5px
+					margin-bottom: 20px
+					.row
+						.mobiletitle
+							font-size: 30px
+							span
+								font-size: 26px
+								display: block
+						img
+							max-width: 100%
+							width: auto
+					.mobiledescription
+						font-size: 24px
+						margin: 30px 0
+					.btn
+						color: $yellow
+						font-size: 24px
+						padding: 0
+			
 footer
 	background-color: #4a4a4a
 	color: #fff
@@ -216,7 +276,7 @@ footer
 		margin: auto
 		display: block
 		
-	img[src*="img_bottom_logo.png"]
+	img[src*="logo.png"]
 		display: none
 	.logo
 		margin-bottom: 10px
@@ -257,7 +317,7 @@ footer
 	
 	
 	
-	img[src*="img_bottom_logo.png"]
+	img[src*="logo.png"]
 		display: block
 		
 	header
@@ -270,7 +330,7 @@ footer
 				position: relative
 				max-width: 1290px
 				margin: auto
-				img[src*="img_nav_logo.png"]
+				img[src*="logo.png"]
 					display: block
 				.menu
 					.menuicon
@@ -314,14 +374,17 @@ footer
 									li
 										margin: 0
 										span
-											font-size: 18px
-											color: $fontgray
-											display: block
-											line-height: 40px
 											margin-bottom: 15px
-											&:hover
-												background-color: $blue
-												color: #fff
+											display: block
+											a
+												font-size: 18px
+												color: $fontgray
+												display: block
+												line-height: 40px
+												font-weight: 600
+												&:hover
+													background-color: $blue
+													color: #fff
 										&:not(:last-of-type)
 											margin: 0
 										ul
@@ -348,9 +411,9 @@ footer
 											
 										
 	.content
-		img[src*="bg_home_top.png"]
+		img[src*="top.png"]
 			display: block
-		img[src*="img_home_begin.png"]
+		img[src*="begin.png"]
 			display: block
 		.container-fluid
 			.row
@@ -358,31 +421,34 @@ footer
 					width: 100%
 					position: relative
 					.hometoparea
-						position: absolute
-						top: 50%
-						left: 50%
-						-webkit-transform: translate(-50%, -50%)
-						-moz-transform: translate(-50%, -50%)
-						-ms-transform: translate(-50%, -50%)
-						-o-transform: translate(-50%, -50%)
-						transform: translate(-50%, -50%)
-						background: url(../images/img_home_top_icon.png)
-						background-size: cover
 						width: 558px
 						height: 558px
+						background-size: cover
 						+display-flex
 						+justify-content(center)
 						+align-items(center)
 						+flex-direction(column)
-						img[src*="img_home_o2o.png"]
+						img[src*="o2o.png"],img[src*="logo.png"]
 							display: block
 							max-width: 333px
 							margin-bottom: 40px
 						span
 							text-align: center
-							color: #fff
-							font-weight: 600
 							font-size: 26px
+					.mobilelife
+						background: url(../images/mobilelife/img_mobilelife_top_icon.png)
+					.mmrm
+						background: url(../images/mmrm/img_mmrm_top_icon.png) no-repeat
+						background-position: center center
+						background-size: contain
+						width: 744px
+						height: 744px
+					.iotstore
+						background: url(../images/iotstore/img_iotstore_top_icon.png) no-repeat
+						background-position: center center
+						background-size: contain
+						width: 744px
+						height: 744px
 				.col
 					.maincontent
 						max-width: 1020px
@@ -405,6 +471,28 @@ footer
 										font-size: 16px
 									.btn-goto
 										font-size: 20px
+							.service
+								padding: 30px 0px
+								&:nth-child(3)
+									padding-top: 0
+								&:last-child
+									padding-bottom: 0
+								&:not(:last-of-type)
+									border-bottom: 1px solid #c9c9c9
+								.servicedescription
+									.title
+										font-size: 24px
+										font-weight: 600
+										span
+											display: block
+											font-weight: normal
+											
+									img[src*="old01.png"],img[src*="old02.png"],img[src*="old03.png"]
+										display: block
+									img[src*="new01.png"],img[src*="new02.png"],img[src*="new03.png"]
+										display: block
+									img[src*="rwd.png"]
+										display: none
 						.benefit
 							.benefittitle
 								text-align: left
@@ -432,6 +520,24 @@ footer
 							.row
 								max-width: 500px
 								margin: auto
+						.mobile
+							.mobileservice
+								max-width: calc((100% - 20px) / 2)
+								&:nth-child(odd)
+									margin-right: 10px
+								&:nth-child(even)
+									margin-left: 10px
+								.row
+									.mobiletitle
+										font-size: 26px
+										span
+											font-size: 20px
+								.mobiledescription
+									font-size: 16px
+								.btn
+									color: $yellow
+									font-size: 16px
+									padding: 0
 	footer
 		.container-fluid
 			.row
@@ -441,7 +547,7 @@ footer
 			margin: 0
 			display: block
 			
-		img[src*="img_bottom_logo.png"]
+		img[src*="logo.png"]
 			display: block
 			
 		.logo
