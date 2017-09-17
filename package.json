@@ -1,7 +1,6 @@
 {
   "name": "wishmobile",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +11,14 @@
     "gulp": "^3.9.1",
     "gulp-compass": "^2.1.0",
     "gulp-webserver": "^0.9.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gx7879/wishmobile.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gx7879/wishmobile/issues"
+  },
+  "homepage": "https://github.com/gx7879/wishmobile#readme",
+  "description": ""
 }

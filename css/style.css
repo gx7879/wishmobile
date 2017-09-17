@@ -23,18 +23,28 @@ header .container-fluid .row .menu .desktopmenu { display: none; }
 .content .row .hometop .hometoparea img[src*="o2o_rwd"], .content .row .hometop .hometoparea img[src*="logo_rwd.png"] { max-width: 166px; margin-bottom: 20px; }
 .content .row .hometop .hometoparea span { text-align: center; color: #fff; font-weight: 600; font-size: 18px; }
 .content .row .hometop .mobilelife { background: url(../images/mobilelife/img_mobilelife_top_icon_rwd.png) no-repeat; }
+.content .row .hometop .mmk { background: url(../images/mmk/img_mmk_top_icon_rwd.png) no-repeat; background-position: center center; background-size: contain; }
+.content .row .hometop .mm { background: url(../images/mm/img_mm_top_icon_rwd.png) no-repeat; background-position: center center; background-size: contain; }
 .content .row .hometop .mmrm { background: url(../images/mmrm/img_mmrm_top_icon_rwd.png) no-repeat; background-position: center center; background-size: contain; }
 .content .row .hometop .iotstore { background: url(../images/iotstore/img_iotstore_top_icon_rwd.png) no-repeat; background-position: center center; background-size: contain; }
+.content .row .hometop .insight { background: url(../images/insight/img_insight_top_icon_rwd.png) no-repeat; }
 .content .row .col { padding: 65px 15px; text-align: center; }
 .content .row .col h1.title { font-size: 30px; font-weight: 600; margin-bottom: 30px; }
 .content .row .col p { color: #7b7b7b; font-size: 26px; margin-bottom: 60px; }
-.content .row .col .imghomebegin, .content .row .col .productintro, .content .row .col .benefit, .content .row .col .contact, .content .row .col .subscription, .content .row .col .mobile { border-bottom: 1px solid #c9c9c9; padding: 60px 0; }
+.content .row .col .imghomebegin, .content .row .col .productintro, .content .row .col .benefit, .content .row .col .contact, .content .row .col .subscription, .content .row .col .mobile, .content .row .col .memberintro, .content .row .col .membermanagement { border-bottom: 1px solid #c9c9c9; padding: 60px 0; }
+.content .row .col .mobile.row.no-gutters { padding-top: 0; }
 .content .row .col .productintro .intro { margin-bottom: 30px; }
 .content .row .col .productintro .intro .introbox { background-color: #4A4A4A; border-radius: 5px; text-align: center; margin-bottom: 20px; padding: 25px 30px; }
 .content .row .col .productintro .intro .introbox .name { color: #fff; font-size: 30px; }
 .content .row .col .productintro .intro .introbox img { max-width: 106px; margin: 30px auto; }
 .content .row .col .productintro .intro .introbox .introcontent { color: #fff; text-align: left; font-size: 26px; }
 .content .row .col .productintro .intro .introbox .btn-goto { font-size: 26px; margin: 30px auto; width: 100%; background-color: #F0C800; color: #4A4A4A; }
+.content .row .col .productintro .memberservice { max-width: 400px; margin: auto; }
+.content .row .col .productintro .memberservice:not(:last-of-type) { margin-bottom: 100px; }
+.content .row .col .productintro .memberservice .memberphoto { margin-bottom: 30px; }
+.content .row .col .productintro .memberservice .membercontent { text-align: center; font-size: 30px; }
+.content .row .col .productintro .memberservice .membercontent span { color: #7b7b7b; border-bottom: 1px solid #E4E4E4; display: block; font-size: 26px; padding: 10px 0px 20px; margin-bottom: 20px; }
+.content .row .col .productintro .memberservice .membercontent .membercontentdescript { text-align: left; font-size: 24px; }
 .content .row .col .productintro .service { padding: 30px 0px; }
 .content .row .col .productintro .service:nth-child(3) { padding-top: 0; }
 .content .row .col .productintro .service:last-child { padding-bottom: 0; }
@@ -67,6 +77,25 @@ header .container-fluid .row .menu .desktopmenu { display: none; }
 .content .row .col .mobile .mobileservice .row img { max-width: 100%; width: auto; }
 .content .row .col .mobile .mobileservice .mobiledescription { font-size: 24px; margin: 30px 0; }
 .content .row .col .mobile .mobileservice .btn { color: #F0C800; font-size: 24px; padding: 0; }
+.content .row .col .mobile .member { margin: auto; }
+.content .row .col .mobile .member:not(:last-of-type) { margin-bottom: 60px; }
+.content .row .col .mobile .member .memberpic { margin-bottom: 30px; }
+.content .row .col .mobile .member .memberpic img { margin: auto; display: block; max-width: 100%; width: auto; }
+.content .row .col .mobile .member .memberpic img[src*="start01.png"], .content .row .col .mobile .member .memberpic img[src*="start02.png"], .content .row .col .mobile .member .memberpic img[src*="start03.png"] { display: none; }
+.content .row .col .mobile .member .memberdescription { font-weight: 600; font-size: 20px; }
+.content .row .col .mobile .member .memberdescription span { display: block; font-weight: normal; margin-top: 20px; font-size: 16px; }
+.content .row .col .memberintro .memberbonus { margin-bottom: 80px; }
+.content .row .col .memberintro .memberbonus img[src*="img_mm_be01.png"], .content .row .col .memberintro .memberbonus img[src*="img_mm_be02.png"], .content .row .col .memberintro .memberbonus img[src*="img_mm_be03.png"] { display: none; }
+.content .row .membermanagement { background-color: #0088BB; margin: 0px -15px; }
+.content .row .membermanagement .aboutmmk h1.title { color: #fff; }
+.content .row .membermanagement .aboutmmk .mobile { border-bottom: 0; }
+.content .row .membermanagement .aboutmmk .mobile .member { margin: auto; }
+.content .row .membermanagement .aboutmmk .mobile .member:not(:last-of-type) { margin-bottom: 60px; }
+.content .row .membermanagement .aboutmmk .mobile .member .memberpic { margin-bottom: 30px; }
+.content .row .membermanagement .aboutmmk .mobile .member .memberpic img { margin: auto; display: block; max-width: 100%; width: auto; }
+.content .row .membermanagement .aboutmmk .mobile .member .memberpic img[src*="more01.png"], .content .row .membermanagement .aboutmmk .mobile .member .memberpic img[src*="more02.png"], .content .row .membermanagement .aboutmmk .mobile .member .memberpic img[src*="more03.png"] { display: none; }
+.content .row .membermanagement .aboutmmk .mobile .member .memberdescription { font-weight: 600; font-size: 20px; }
+.content .row .membermanagement .aboutmmk .mobile .member .memberdescription span { display: block; font-weight: normal; margin-top: 20px; font-size: 16px; }
 
 footer { background-color: #4a4a4a; color: #fff; padding: 60px 0; }
 footer img { margin: auto; display: block; }
@@ -89,7 +118,7 @@ footer .copyright span { display: block; }
   header .container-fluid .row img[src*="logo.png"] { display: block; }
   header .container-fluid .row .menu .menuicon { display: none; }
   header .container-fluid .row .menu ul.mtree { display: none; }
-  header .container-fluid .row .menu .desktopmenu { display: block; }
+  header .container-fluid .row .menu .desktopmenu { display: block; position: relative; z-index: 999; }
   header .container-fluid .row .menu .desktopmenu > ul { font-size: 0; margin-bottom: 0; }
   header .container-fluid .row .menu .desktopmenu > ul > li { display: inline-block; font-size: 18px; position: relative; }
   header .container-fluid .row .menu .desktopmenu > ul > li:not(:last-of-type) { margin-right: 30px; }
@@ -115,6 +144,9 @@ footer .copyright span { display: block; }
   .content .container-fluid .row .hometop .mobilelife { background: url(../images/mobilelife/img_mobilelife_top_icon.png); }
   .content .container-fluid .row .hometop .mmrm { background: url(../images/mmrm/img_mmrm_top_icon.png) no-repeat; background-position: center center; background-size: contain; width: 744px; height: 744px; }
   .content .container-fluid .row .hometop .iotstore { background: url(../images/iotstore/img_iotstore_top_icon.png) no-repeat; background-position: center center; background-size: contain; width: 744px; height: 744px; }
+  .content .container-fluid .row .hometop .insight { background: url(../images/insight/img_insight_top_icon_rwd.png) no-repeat; background-position: center center; background-size: contain; width: 744px; height: 744px; }
+  .content .container-fluid .row .hometop .mmk { background: url(../images/mmk/img_mmk_top_icon_rwd.png) no-repeat; background-position: center center; background-size: contain; width: 744px; height: 744px; }
+  .content .container-fluid .row .hometop .mm { background: url(../images/mm/img_mm_top_icon_rwd.png) no-repeat; background-position: center center; background-size: contain; width: 744px; height: 744px; }
   .content .container-fluid .row .col .maincontent { max-width: 1020px; margin: auto; }
   .content .container-fluid .row .col .maincontent h1.title { margin-bottom: 20px; }
   .content .container-fluid .row .col .maincontent p { font-size: 20px; margin-bottom: 60px; }
@@ -132,6 +164,12 @@ footer .copyright span { display: block; }
   .content .container-fluid .row .col .maincontent .productintro .service .servicedescription img[src*="old01.png"], .content .container-fluid .row .col .maincontent .productintro .service .servicedescription img[src*="old02.png"], .content .container-fluid .row .col .maincontent .productintro .service .servicedescription img[src*="old03.png"] { display: block; }
   .content .container-fluid .row .col .maincontent .productintro .service .servicedescription img[src*="new01.png"], .content .container-fluid .row .col .maincontent .productintro .service .servicedescription img[src*="new02.png"], .content .container-fluid .row .col .maincontent .productintro .service .servicedescription img[src*="new03.png"] { display: block; }
   .content .container-fluid .row .col .maincontent .productintro .service .servicedescription img[src*="rwd.png"] { display: none; }
+  .content .container-fluid .row .col .maincontent .productintro .memberservice { max-width: 885px; margin: auto; }
+  .content .container-fluid .row .col .maincontent .productintro .memberservice:not(:last-of-type) { margin-bottom: 100px; }
+  .content .container-fluid .row .col .maincontent .productintro .memberservice .memberphoto { margin-bottom: 0px; max-width: calc((100% - 40px) / 2); margin-right: 20px; }
+  .content .container-fluid .row .col .maincontent .productintro .memberservice .membercontent { text-align: center; font-size: 30px; max-width: calc((100% - 40px) / 2); margin-left: 20px; }
+  .content .container-fluid .row .col .maincontent span { color: #7b7b7b; display: block; font-size: 26px; padding: 10px 0px 20px; margin-bottom: 20px; }
+  .content .container-fluid .row .col .maincontent .membercontentdescript { text-align: left; font-size: 24px; }
   .content .container-fluid .row .col .maincontent .benefit .benefittitle { text-align: left; max-width: 643px; margin: 0px auto 40px; }
   .content .container-fluid .row .col .maincontent .benefit .benefittitle .num { font-size: 26px; line-height: 48px; }
   .content .container-fluid .row .col .maincontent .benefit .benefittitle span { font-size: 48px; }
@@ -147,6 +185,21 @@ footer .copyright span { display: block; }
   .content .container-fluid .row .col .maincontent .mobile .mobileservice .row .mobiletitle span { font-size: 20px; }
   .content .container-fluid .row .col .maincontent .mobile .mobileservice .mobiledescription { font-size: 16px; }
   .content .container-fluid .row .col .maincontent .mobile .mobileservice .btn { color: #F0C800; font-size: 16px; padding: 0; }
+  .content .container-fluid .row .col .maincontent .mobile .member { margin: auto; max-width: calc((100% - 60px) / 3); }
+  .content .container-fluid .row .col .maincontent .mobile .member:not(:last-of-type) { margin-bottom: 0px; }
+  .content .container-fluid .row .col .maincontent .mobile .member .memberpic img { margin: auto; display: block; max-width: 100%; width: auto; }
+  .content .container-fluid .row .col .maincontent .mobile .member .memberpic img[src*="rwd"] { display: none; }
+  .content .container-fluid .row .col .maincontent .memberintro .memberbonus { margin-bottom: 80px; }
+  .content .container-fluid .row .col .maincontent .memberintro .memberbonus img[src*="img_mm_be01.png"], .content .container-fluid .row .col .maincontent .memberintro .memberbonus img[src*="img_mm_be02.png"], .content .container-fluid .row .col .maincontent .memberintro .memberbonus img[src*="img_mm_be03.png"] { display: block; width: auto; max-width: 100%; margin: auto; }
+  .content .container-fluid .row .col .maincontent .memberintro .memberbonus img[src*="rwd"] { display: none; }
+  .content .container-fluid .row .col .membermanagement { margin: 0px -15px; }
+  .content .container-fluid .row .col .membermanagement .aboutmmk .mobile .member { margin: auto; max-width: calc((100% - 60px) / 3); }
+  .content .container-fluid .row .col .membermanagement .aboutmmk .mobile .member:not(:last-of-type) { margin-bottom: 0px; }
+  .content .container-fluid .row .col .membermanagement .aboutmmk .mobile .member .memberpic { margin-bottom: 30px; }
+  .content .container-fluid .row .col .membermanagement .aboutmmk .mobile .member .memberpic img { margin: auto; display: block; max-width: 100%; width: auto; }
+  .content .container-fluid .row .col .membermanagement .aboutmmk .mobile .member .memberpic img[src*="more01.png"], .content .container-fluid .row .col .membermanagement .aboutmmk .mobile .member .memberpic img[src*="more02.png"], .content .container-fluid .row .col .membermanagement .aboutmmk .mobile .member .memberpic img[src*="more03.png"] { display: none; }
+  .content .container-fluid .row .col .membermanagement .aboutmmk .mobile .member .memberdescription { font-weight: 600; font-size: 20px; }
+  .content .container-fluid .row .col .membermanagement .aboutmmk .mobile .member .memberdescription span { display: block; font-weight: normal; margin-top: 20px; font-size: 16px; }
   footer .container-fluid .row { max-width: 825px; margin: auto; }
   footer img { margin: 0; display: block; }
   footer img[src*="logo.png"] { display: block; }

@@ -110,6 +110,14 @@ header
 					font-size: 18px
 			.mobilelife
 				background: url(../images/mobilelife/img_mobilelife_top_icon_rwd.png) no-repeat
+			.mmk
+				background: url(../images/mmk/img_mmk_top_icon_rwd.png) no-repeat
+				background-position: center center
+				background-size: contain
+			.mm
+				background: url(../images/mm/img_mm_top_icon_rwd.png) no-repeat
+				background-position: center center
+				background-size: contain
 			.mmrm
 				background: url(../images/mmrm/img_mmrm_top_icon_rwd.png) no-repeat
 				background-position: center center
@@ -118,6 +126,8 @@ header
 				background: url(../images/iotstore/img_iotstore_top_icon_rwd.png) no-repeat
 				background-position: center center
 				background-size: contain
+			.insight
+				background: url(../images/insight/img_insight_top_icon_rwd.png) no-repeat
 
 				
 		.col
@@ -132,9 +142,11 @@ header
 				font-size: 26px
 				margin-bottom: 60px
 				// text-align: left
-			.imghomebegin,.productintro,.benefit,.contact,.subscription,.mobile
+			.imghomebegin,.productintro,.benefit,.contact,.subscription,.mobile,.memberintro,.membermanagement
 				border-bottom: 1px solid #c9c9c9
 				padding: 60px 0
+			.mobile.row.no-gutters
+				padding-top: 0
 			.productintro
 				.intro
 					margin-bottom: 30px
@@ -160,6 +172,27 @@ header
 							width: 100%
 							background-color: $yellow
 							color: $fontgray
+				.memberservice
+					max-width: 400px
+					margin: auto
+					&:not(:last-of-type)
+						margin-bottom: 100px
+					.memberphoto
+						margin-bottom: 30px
+					.membercontent
+						text-align: center
+						font-size: 30px
+
+						span
+							color: #7b7b7b
+							border-bottom: 1px solid $fontlightgray
+							display: block
+							font-size: 26px
+							padding: 10px 0px 20px
+							margin-bottom: 20px
+						.membercontentdescript
+							text-align: left
+							font-size: 24px
 				.service
 					padding: 30px 0px
 					&:nth-child(3)
@@ -267,6 +300,61 @@ header
 						color: $yellow
 						font-size: 24px
 						padding: 0
+				.member
+					margin: auto
+					&:not(:last-of-type)
+						margin-bottom: 60px
+					.memberpic
+						margin-bottom: 30px
+						img
+							margin: auto
+							display: block
+							max-width: 100%
+							width: auto
+						img[src*="start01.png"],img[src*="start02.png"],img[src*="start03.png"]
+							display: none
+					.memberdescription
+						font-weight: 600
+						font-size: 20px
+						span
+							display: block
+							font-weight: normal
+							margin-top: 20px
+							font-size: 16px
+			.memberintro
+				.memberbonus
+					margin-bottom: 80px
+					img[src*="img_mm_be01.png"],img[src*="img_mm_be02.png"],img[src*="img_mm_be03.png"]
+						display: none
+		.membermanagement
+			background-color: $blue
+			margin: 0px -15px
+			.aboutmmk
+				h1.title
+					color: #fff
+				.mobile
+					border-bottom: 0
+					.member
+						margin: auto
+						&:not(:last-of-type)
+							margin-bottom: 60px
+						.memberpic
+							margin-bottom: 30px
+							img
+								margin: auto
+								display: block
+								max-width: 100%
+								width: auto
+							img[src*="more01.png"],img[src*="more02.png"],img[src*="more03.png"]
+								display: none
+						.memberdescription
+							font-weight: 600
+							font-size: 20px
+							span
+								display: block
+								font-weight: normal
+								margin-top: 20px
+								font-size: 16px
 			
 footer
 	background-color: #4a4a4a
@@ -339,6 +427,8 @@ footer
 						display: none
 					.desktopmenu
 						display: block
+						position: relative
+						z-index: 999
 						>ul
 							font-size: 0
 							margin-bottom: 0
@@ -449,6 +539,24 @@ footer
 						background-size: contain
 						width: 744px
 						height: 744px
+					.insight
+						background: url(../images/insight/img_insight_top_icon_rwd.png) no-repeat
+						background-position: center center
+						background-size: contain
+						width: 744px
+						height: 744px
+					.mmk
+						background: url(../images/mmk/img_mmk_top_icon_rwd.png) no-repeat
+						background-position: center center
+						background-size: contain
+						width: 744px
+						height: 744px
+					.mm
+						background: url(../images/mm/img_mm_top_icon_rwd.png) no-repeat
+						background-position: center center
+						background-size: contain
+						width: 744px
+						height: 744px
 				.col
 					.maincontent
 						max-width: 1020px
@@ -493,6 +601,31 @@ footer
 										display: block
 									img[src*="rwd.png"]
 										display: none
+							.memberservice
+								max-width: 885px
+								margin: auto
+								&:not(:last-of-type)
+									margin-bottom: 100px
+								.memberphoto
+									margin-bottom: 0px
+									max-width: calc((100% - 40px) / 2)
+									margin-right: 20px
+								.membercontent
+									text-align: center
+									font-size: 30px
+									max-width: calc((100% - 40px) / 2)
+									margin-left: 20px
+
+						span
+							color: #7b7b7b
+							// border-bottom: 1px solid $fontlightgray
+							display: block
+							font-size: 26px
+							padding: 10px 0px 20px
+							margin-bottom: 20px
+						.membercontentdescript
+							text-align: left
+							font-size: 24px
 						.benefit
 							.benefittitle
 								text-align: left
@@ -538,6 +671,56 @@ footer
 									color: $yellow
 									font-size: 16px
 									padding: 0
+							.member
+								margin: auto
+								max-width: calc((100% - 60px) / 3)
+								&:not(:last-of-type)
+									margin-bottom: 0px
+								.memberpic
+									img
+										margin: auto
+										display: block
+										max-width: 100%
+										width: auto
+									img[src*="rwd"]
+										display: none
+						.memberintro
+							.memberbonus
+								margin-bottom: 80px
+								img[src*="img_mm_be01.png"],img[src*="img_mm_be02.png"],img[src*="img_mm_be03.png"]
+									display: block
+									width: auto
+									max-width: 100%
+									margin: auto
+								img[src*="rwd"]
+									display: none
+					.membermanagement
+						margin: 0px -15px
+						.aboutmmk
+							.mobile
+								.member
+									margin: auto
+									max-width: calc((100% - 60px) / 3)
+									&:not(:last-of-type)
+										margin-bottom: 0px
+									.memberpic
+										margin-bottom: 30px
+										img
+											margin: auto
+											display: block
+											max-width: 100%
+											width: auto
+										img[src*="more01.png"],img[src*="more02.png"],img[src*="more03.png"]
+											display: none
+									.memberdescription
+										font-weight: 600
+										font-size: 20px
+										span
+											display: block
+											font-weight: normal
+											margin-top: 20px
+											font-size: 16px
+
 	footer
 		.container-fluid
 			.row
