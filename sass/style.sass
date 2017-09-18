@@ -90,8 +90,10 @@ header
 				-ms-transform: translate(-50%, -50%)
 				-o-transform: translate(-50%, -50%)
 				transform: translate(-50%, -50%)
-				background: url(../images/img_home_top_icon_rwd.png) no-repeat
-				background-size: cover
+				background-image: url(../images/img_home_top_icon_rwd.png)
+				background-repeat: no-repeat
+				background-size: contain
+				background-position: center center
 				width: 302px
 				height: 302px
 				+display-flex
@@ -103,31 +105,46 @@ header
 				img[src*="o2o_rwd"],img[src*="logo_rwd.png"]
 					max-width: 166px
 					margin-bottom: 20px
+					width: auto
 				span
 					text-align: center
 					color: #fff
 					font-weight: 600
 					font-size: 18px
 			.mobilelife
-				background: url(../images/mobilelife/img_mobilelife_top_icon_rwd.png) no-repeat
+				background-image: url(../images/mobilelife/img_mobilelife_top_icon_rwd.png)
+			.mwt
+				background-image: url(../images/mwt/img_mwt_top_icon_rwd.png)
+			.msp
+				background-image: url(../images/msp/img_msp_top_icon_rwd.png)
+			.mcms
+				background-image: url(../images/mcms/img_mcms_top_icon_rwd.png)
+			.mntf
+				background-image: url(../images/mntf/img_mntf_top_icon_rwd.png)
+			.mpos
+				background-image: url(../images/mpos/img_mpos_top_icon_rwd.png)
+			.mast
+				background-image: url(../images/mast/img_mast_top_icon_rwd.png)
+			.mi
+				background-image: url(../images/mi/img_mi_top_icon_rwd.png)
+			.si
+				background-image: url(../images/si/img_si_top_icon_rwd.png)
+			.mos
+				background-image: url(../images/mos/img_mos_top_icon_rwd.png)
+			.mfb
+				background-image: url(../images/mfb/img_mfb_top_icon_rwd.png)
 			.mmk
-				background: url(../images/mmk/img_mmk_top_icon_rwd.png) no-repeat
-				background-position: center center
-				background-size: contain
+				background-image: url(../images/mmk/img_mmk_top_icon_rwd.png)
 			.mm
-				background: url(../images/mm/img_mm_top_icon_rwd.png) no-repeat
-				background-position: center center
-				background-size: contain
+				background-image: url(../images/mm/img_mm_top_icon_rwd.png)
 			.mmrm
-				background: url(../images/mmrm/img_mmrm_top_icon_rwd.png) no-repeat
-				background-position: center center
-				background-size: contain
+				background-image: url(../images/mmrm/img_mmrm_top_icon_rwd.png)
 			.iotstore
-				background: url(../images/iotstore/img_iotstore_top_icon_rwd.png) no-repeat
-				background-position: center center
-				background-size: contain
+				background-image: url(../images/iotstore/img_iotstore_top_icon_rwd.png)
 			.insight
-				background: url(../images/insight/img_insight_top_icon_rwd.png) no-repeat
+				background-image: url(../images/insight/img_insight_top_icon_rwd.png)
+			.about
+				background-image: none
 
 				
 		.col
@@ -142,7 +159,18 @@ header
 				font-size: 26px
 				margin-bottom: 60px
 				// text-align: left
-			.imghomebegin,.productintro,.benefit,.contact,.subscription,.mobile,.memberintro,.membermanagement
+			.aboutus
+				.aboutuscontent
+					max-width: 800px
+					margin: 0 auto
+				p
+					text-align: left
+				.pic
+					img[src*="intro.png"],img[src*="award01.png"],img[src*="award02.png"],img[src*="news01.png"],img[src*="news02.png"],img[src*="speech01.png"],img[src*="speech02.png"]
+						display: none
+					p
+						text-align: center
+			.imghomebegin,.productintro,.benefit,.contact,.subscription,.mobile,.memberintro,.membermanagement,.intro,.aboutus
 				border-bottom: 1px solid #c9c9c9
 				padding: 60px 0
 			.mobile.row.no-gutters
@@ -193,6 +221,20 @@ header
 						.membercontentdescript
 							text-align: left
 							font-size: 24px
+				.mainfunction
+					.title
+						margin: 0px auto 30px
+					p
+						margin: 0 auto 60px
+					img
+						max-width: 100%
+						width: auto
+						margin: 0 auto 30px
+						display: block
+					.mainfunctionpic
+						p
+							margin: 0
+						
 				.service
 					padding: 30px 0px
 					&:nth-child(3)
@@ -324,11 +366,12 @@ header
 			.memberintro
 				.memberbonus
 					margin-bottom: 80px
-					img[src*="img_mm_be01.png"],img[src*="img_mm_be02.png"],img[src*="img_mm_be03.png"]
+					img[src*="be01.png"],img[src*="be02.png"],img[src*="be03.png"],img[src*="be04.png"],img[src*="be05.png"]
 						display: none
 		.membermanagement
 			background-color: $blue
 			margin: 0px -15px
+			border-bottom: 0
 			.aboutmmk
 				h1.title
 					color: #fff
@@ -350,12 +393,36 @@ header
 						.memberdescription
 							font-weight: 600
 							font-size: 20px
+							color: #fff
 							span
 								display: block
 								font-weight: normal
 								margin-top: 20px
 								font-size: 16px
-			
+		.intro
+			background-color: $gray
+			margin: 0px -15px
+			border-bottom: 0
+			.mmkintro
+				.topcolumn
+					img
+						max-width: 100%
+						width: auto
+						margin-bottom: 60px
+					p
+						font-size: 26px
+						margin: 0
+						color: #fff
+						text-align: left
+				.line
+					color: #fff
+					margin: 30px 0
+				.bottomcolumn
+					p
+						font-size: 24px
+						margin: 0
+						color: #fff
+						text-align: left
 footer
 	background-color: #4a4a4a
 	color: #fff
@@ -513,7 +580,7 @@ footer
 					.hometoparea
 						width: 558px
 						height: 558px
-						background-size: cover
+						background-size: contain
 						+display-flex
 						+justify-content(center)
 						+align-items(center)
@@ -522,41 +589,51 @@ footer
 							display: block
 							max-width: 333px
 							margin-bottom: 40px
+							width: auto
 						span
 							text-align: center
 							font-size: 26px
 					.mobilelife
-						background: url(../images/mobilelife/img_mobilelife_top_icon.png)
+						background-image: url(../images/mobilelife/img_mobilelife_top_icon.png)
+					.mwt
+						background-image: url(../images/mwt/img_mwt_top_icon.png)
 					.mmrm
-						background: url(../images/mmrm/img_mmrm_top_icon.png) no-repeat
-						background-position: center center
-						background-size: contain
+						background-image: url(../images/mmrm/img_mmrm_top_icon.png)
 						width: 744px
 						height: 744px
 					.iotstore
-						background: url(../images/iotstore/img_iotstore_top_icon.png) no-repeat
-						background-position: center center
-						background-size: contain
+						background-image: url(../images/iotstore/img_iotstore_top_icon.png)
 						width: 744px
 						height: 744px
 					.insight
-						background: url(../images/insight/img_insight_top_icon_rwd.png) no-repeat
-						background-position: center center
-						background-size: contain
+						background-image: url(../images/insight/img_insight_top_icon.png)
 						width: 744px
 						height: 744px
 					.mmk
-						background: url(../images/mmk/img_mmk_top_icon_rwd.png) no-repeat
-						background-position: center center
-						background-size: contain
+						background-image: url(../images/mmk/img_mmk_top_icon.png)
 						width: 744px
 						height: 744px
 					.mm
-						background: url(../images/mm/img_mm_top_icon_rwd.png) no-repeat
-						background-position: center center
-						background-size: contain
+						background-image: url(../images/mm/img_mm_top_icon.png)
 						width: 744px
 						height: 744px
+					.msp
+						background-image: url(../images/msp/img_msp_top_icon.png)
+					.mcms
+						background-image: url(../images/mcms/img_mcms_top_icon.png)
+					.mntf
+						background-image: url(../images/mntf/img_mntf_top_icon.png)
+					.mfb
+						background-image: url(../images/mfb/img_mfb_top_icon.png)
+					.mpos
+						background-image: url(../images/mpos/img_mpos_top_icon.png)
+						width: 744px
+						height: 744px
+					.mast
+						background-image: url(../images/mast/img_mast_top_icon.png)
+						width: 744px
+						height: 744px
+					
 				.col
 					.maincontent
 						max-width: 1020px
@@ -566,6 +643,8 @@ footer
 						p
 							font-size: 20px
 							margin-bottom: 60px
+					
+									
 						.productintro
 							.intro
 
@@ -649,6 +728,8 @@ footer
 										text-align: left
 										span
 											display: block
+											padding: 0
+											margin: 0
 						.subscription
 							.row
 								max-width: 500px
@@ -672,7 +753,7 @@ footer
 									font-size: 16px
 									padding: 0
 							.member
-								margin: auto
+								margin: 0px auto
 								max-width: calc((100% - 60px) / 3)
 								&:not(:last-of-type)
 									margin-bottom: 0px
@@ -687,19 +768,27 @@ footer
 						.memberintro
 							.memberbonus
 								margin-bottom: 80px
-								img[src*="img_mm_be01.png"],img[src*="img_mm_be02.png"],img[src*="img_mm_be03.png"]
+								img[src*="be01.png"],img[src*="be02.png"],img[src*="be03.png"],img[src*="be04.png"],img[src*="be05.png"]
 									display: block
 									width: auto
 									max-width: 100%
 									margin: auto
 								img[src*="rwd"]
 									display: none
+						.aboutus
+							.pic
+								img[src*="intro.png"],img[src*="award01.png"],img[src*="award02.png"],img[src*="news01.png"],img[src*="news02.png"],img[src*="speech01.png"],img[src*="speech02.png"]
+									display: block
 					.membermanagement
 						margin: 0px -15px
+						border-bottom: 0
 						.aboutmmk
+							max-width: 1020px
+							margin: auto
 							.mobile
+								padding: 0
 								.member
-									margin: auto
+									margin: 0px auto
 									max-width: calc((100% - 60px) / 3)
 									&:not(:last-of-type)
 										margin-bottom: 0px
@@ -720,6 +809,24 @@ footer
 											font-weight: normal
 											margin-top: 20px
 											font-size: 16px
+					.intro
+						border-bottom: 0
+						.mmkintro
+							max-width: 1020px
+							margin: auto
+							.topcolumn
+								img
+									margin-bottom: 40px
+								p
+									font-size: 20px
+									text-align: center
+
+							.line
+								margin: 40px 0
+							.bottomcolumn
+								p
+									font-size: 16px
+
 
 	footer
 		.container-fluid
