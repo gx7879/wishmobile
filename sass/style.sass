@@ -17,42 +17,67 @@ header
 		.row
 			height: 80px
 			position: relative
+			margin: auto
 			input[type=checkbox]
 				display: none
 			input[type=checkbox]:checked + ul.mtree
 				display: block
 			img[src*="logo.png"]
 				display: none
+			.logo
+				img
+					width: 180px
+					height: auto
 			.menu
 				ul.mtree
 					background-color: #fff
 					position: absolute
 					top: 100%
 					left: 0
-					width: 100%
+					width: calc(100% + 30px)
 					display: none
 					padding: 0
 					z-index: 999
+					margin: 0 -15px
+					>.mtree-node
+						position: relative
+						
+						&:before
+							content: ""
+							width: 0
+							height: 0
+							border-style: solid
+							border-width: 10px 5px 0 5px
+							border-color: #000000 transparent transparent transparent
+							position: absolute
+							right: 15px
+							top: 30px
+							-webkit-transform: translateY(-50%)
+							-moz-transform: translateY(-50%)
+							-ms-transform: translateY(-50%)
+							-o-transform: translateY(-50%)
+							transform: translateY(-50%)
+							
 					li
 						// height: 80px
 
 						&:not(:last-of-type)
 							border-bottom: 1px solid #c9c9c9
 						a
-							line-height: 80px
-							height: 80px
+							line-height: 60px
+							height: 60px
 							// text-align: center
 							display: block
 							text-decoration: none
 							color: #000
 							padding: 0 30px
-							font-size: 30px
+							font-size: 24px
 					.mtree-level-1
 						.mtree-node
 							&:not(:last-of-type)
 								border-bottom: none
 							a
-								font-size: 30px
+								font-size: 24px
 								line-height: 68px
 							.mtree-level-2
 								display: block !important
@@ -60,11 +85,12 @@ header
 								height: auto !important
 								margin: 0 30px
 								li
-									font-size: 26px
+									font-size: 20px
 									&:not(:last-of-type)
 										border-bottom: none
 									a
-										line-height: 50px
+										line-height: 35px
+										height: 35px
 										padding: 0
 										color: $fontmdgray
 				.desktopmenu
@@ -148,7 +174,7 @@ header
 
 				
 		.col
-			padding: 65px 15px
+			padding: 65px 20px
 			text-align: center
 			h1.title
 				font-size: 30px
@@ -156,8 +182,9 @@ header
 				margin-bottom: 30px
 			p
 				color: #7b7b7b
-				font-size: 26px
+				font-size: 22px
 				margin-bottom: 60px
+				text-align: justify
 				// text-align: left
 			.aboutus
 				.aboutuscontent
@@ -176,13 +203,13 @@ header
 			.mobile.row.no-gutters
 				padding-top: 0
 			.productintro
-				.intro
-					margin-bottom: 30px
+				.productintrocontent
+					margin: 0px 0px 30px
 					.introbox
 						background-color: $gray
 						border-radius: 5px
 						text-align: center
-						margin-bottom: 20px
+						margin: 0px 0px 20px
 						padding: 25px 30px
 						.name
 							color: #fff
@@ -192,7 +219,7 @@ header
 							margin: 30px auto
 						.introcontent
 							color: #fff
-							text-align: left
+							text-align: justify
 							font-size: 26px
 						.btn-goto
 							font-size: 26px
@@ -272,6 +299,7 @@ header
 						width: 30px
 						height: 30px
 						vertical-align: middle
+						margin-right: 5px
 					&:nth-child(4)
 						&:before
 							background-image: url('../images/img_home_shop.png')
@@ -285,7 +313,7 @@ header
 						&:before
 							background-image: url('../images/img_home_cost.png')
 					.num
-						width: calc(100% - 35px)
+						width: calc(100% - 40px)
 						display: inline-block
 						line-height: 30px
 						vertical-align: middle
@@ -434,16 +462,18 @@ footer
 	img[src*="logo.png"]
 		display: none
 	.logo
-		margin-bottom: 10px
+		margin-bottom: 20px
 	.contactinfo
 		text-align: center
-		font-size: 26px
+		font-size: 20px
 		span
 			margin-bottom: 10px
 			display: block
+			a
+				color: #fff
 	.socialicon
 		text-align: center
-		margin-bottom: 60px
+		margin: 30px 0px
 		a
 			display: inline-block
 			&:nth-child(2)
@@ -451,18 +481,21 @@ footer
 	.col
 		span.title
 			font-weight: 600
-			font-size: 30px
+			font-size: 22px
 			margin-bottom: 20px
 			display: block
+			text-align: center
 			
 		ul
+			text-align: center
 			li
 				a
-					font-size: 26px
+					font-size: 18px
 					color: #fff
 	.copyright
 		text-align: center
-		font-size: 20px
+		font-size: 16px
+		margin-top: 30px
 		span
 			display: block
 
@@ -487,13 +520,9 @@ footer
 				margin: auto
 				img[src*="logo.png"]
 					display: block
+					width: 100%
 				.menu
-					.menuicon
-						display: none
-					ul.mtree
-						display: none
 					.desktopmenu
-						display: block
 						position: relative
 						z-index: 999
 						>ul
@@ -539,6 +568,8 @@ footer
 												display: block
 												line-height: 40px
 												font-weight: 600
+												margin: 0 -15px
+												padding-left: 15px
 												&:hover
 													background-color: $blue
 													color: #fff
@@ -556,9 +587,10 @@ footer
 												color: $fontmdgray
 												line-height: 34px
 												a
-													line-height: 34px
+													line-height: 30px
 													display: block
-													
+													margin: 0 -15px
+													padding-left: 15px
 													&:hover
 														background-color: $blue
 														color: #fff
@@ -585,11 +617,12 @@ footer
 						+justify-content(center)
 						+align-items(center)
 						+flex-direction(column)
+						max-height: 80%
 						img[src*="o2o.png"],img[src*="logo.png"]
 							display: block
 							max-width: 333px
 							margin-bottom: 40px
-							width: auto
+							width: 50%
 						span
 							text-align: center
 							font-size: 26px
@@ -643,19 +676,22 @@ footer
 						p
 							font-size: 20px
 							margin-bottom: 60px
-					
+							max-width: 643px
+							margin: 0 auto
 									
 						.productintro
-							.intro
-
+							.productintrocontent
 								.introbox
 									max-width: calc((100% - 60px) / 4)
+									+flex-direction(column)
+									margin: 0
 									&:not(:last-of-type)
-										margin-right: 20px
+										margin: 0px 20px 0px 0px
 									.name
 										font-size: 26px
 									.introcontent
 										font-size: 16px
+										flex: 1
 									.btn-goto
 										font-size: 20px
 							.service
@@ -716,6 +752,9 @@ footer
 
 								span
 									font-size: 48px
+									margin: 0
+									padding: 0
+									color: $yellow
 						.contact
 							.row
 								max-width: 783px
@@ -870,3 +909,15 @@ footer
 			font-size: 20px
 			span
 				display: none
+
+@media only screen and (min-width: 900px)
+	header
+		.container-fluid
+			.row
+				.menu
+					.menuicon
+						display: none
+					ul.mtree
+						display: none
+					.desktopmenu
+						display: block
